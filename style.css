@@ -159,7 +159,7 @@ footer {
 /* Footer left */
 
 #gradient {
-    background-image: linear-gradient(to right, rgb(90, 88, 88) , black);
+  background-image: linear-gradient(to right, rgb(90, 88, 88), black);
 }
 
 .footer-distributed .footer-left {
