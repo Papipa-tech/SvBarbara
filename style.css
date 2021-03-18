@@ -164,7 +164,9 @@ footer {
 /* Footer left */
 
 #gradient {
-  background-image: linear-gradient(to right, rgb(90, 88, 88), black);
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
 }
 
 .footer-distributed .footer-left {
