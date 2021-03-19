@@ -8,6 +8,8 @@ html {
 .navbar {
   color: white;
   font-size: 22px;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .navbar .navbar-brand img {
