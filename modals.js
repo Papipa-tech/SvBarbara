@@ -9,7 +9,6 @@ const mainCloseModalKlasiranje = document.querySelector(".close-modal");
 
 // Grabbing custom modal elements
 // Kamenolomi
-// const modalUsitnjavanje = document.getElementById("usitnjavanje");
 const modalKlasiranje = document.getElementById("klasiranje");
 // const modalTransport = document.getElementById("transport");
 // const modalOtprasivanje = document.getElementById("otprasivanje");
@@ -46,7 +45,6 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Custom modals
-//modalUsitnjavanje.addEventListener("click", openModalUsitnjavanje);
 modalKlasiranje.addEventListener("click", openModalKlasiranje);
 // modalTransport.addEventListener("click", openModal);
 // modalOtprasivanje.addEventListener("click", openModal);
@@ -60,7 +58,8 @@ modalKlasiranje.addEventListener("click", openModalKlasiranje);
 // modalBioOtpad.addEventListener("click", openModal);
 // modalOstali.addEventListener("click", openModal);
 
-//USITNJAVANJE
+//USITNJAVANJE//////////////////////////////////////////////////////////////////
+
 const mainModalUsitnjavanje = document.querySelector(".modal-usitnjavanje");
 // generic modal properties
 const mainOverlayUsitnjavanje = document.querySelector(".modal-overlay");
@@ -93,3 +92,63 @@ document.addEventListener("keydown", function (e) {
 });
 
 modalUsitnjavanje.addEventListener("click", openModalUsitnjavanje);
+
+// MODAL KONTAKT FORMA//////////////////////////////////////////////////////
+
+const mainModalKontakt = document.querySelector(".modal-kontakt");
+// generic modal properties
+const mainOverlayKontakt = document.querySelector(".modal-overlay");
+const mainCloseModalKontakt = document.querySelector(".close-kontakt");
+
+const modalKontakt = document.getElementById("kontakt");
+
+const openModalKontakt = function () {
+  mainModalKontakt.classList.remove("hidden");
+  mainOverlayKontakt.classList.remove("hidden");
+};
+
+const closeModalKontakt = function () {
+  mainModalKontakt.classList.add("hidden");
+  mainOverlayKontakt.classList.add("hidden");
+};
+
+mainCloseModalKontakt.addEventListener("click", closeModalKontakt);
+mainOverlayKontakt.addEventListener("click", closeModalKontakt);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !mainModalKontakt.classList.contains("hidden")) {
+    closeModalKontakt();
+  }
+});
+
+modalKontakt.addEventListener("click", openModalKontakt);
+
+// MODAL O NAMA/////////////////////////////////////////////////////////
+
+const mainModalOnama = document.querySelector(".modal-onama");
+// generic modal properties
+const mainOverlayOnama = document.querySelector(".modal-overlay");
+const mainCloseModalOnama = document.querySelector(".close-onama");
+
+const modalOnama = document.getElementById("onama");
+
+const openModalOnama = function () {
+  mainModalOnama.classList.remove("hidden");
+  mainOverlayOnama.classList.remove("hidden");
+};
+
+const closeModalOnama = function () {
+  mainModalOnama.classList.add("hidden");
+  mainOverlayOnama.classList.add("hidden");
+};
+
+mainCloseModalOnama.addEventListener("click", closeModalOnama);
+mainOverlayOnama.addEventListener("click", closeModalOnama);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !mainModalOnama.classList.contains("hidden")) {
+    closeModalOnama();
+  }
+});
+
+modalOnama.addEventListener("click", openModalOnama);

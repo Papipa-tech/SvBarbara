@@ -16,6 +16,7 @@
 
 <body>
 
+    <!--   NAVBAR   -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="gradient">
         <div class="container-xl">
             <a href="#" class="navbar-brand"><img id="nav_logo" class="rounded"
@@ -31,7 +32,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-fw fa-home"></i> Početna</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="onama" class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-fw fa-info-circle" aria-hidden="true"></i> O nama
                         </a>
                     </li>
@@ -64,8 +65,8 @@
                             <a id="ostali" class="dropdown-item" href="#">Ostali</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Kontakt"><i class="fa fa-fw fa-envelope"></i> Kontakt</a>
+                    <li id="kontakt" class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-fw fa-envelope"></i> Kontakt</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="index.html" id="dropdown09" data-toggle="dropdown"
@@ -87,7 +88,7 @@
     </div>
     </div>
 
-    <!-- Naslovna slika -->
+    <!-- NASLOVNA SLIKA -->
     <div class="hero-section">
         <div class="container">
             <div class="row">
@@ -166,13 +167,102 @@
                         - Čvrstoća 160 - 180 kg/mm²
                         <br>
                         - Opružni čelik s primjesama kroma i nikla.
-
                     </p>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal-overlay hidden"></div>
+
+    <!-- MODAL O NAMA -->
+    <div class="modal-window modal-onama hidden">
+        <button class="close-modal close-onama">&times;</button>
+        <div class="onama">
+            <div class="container">
+                <div class="row">
+                    <div class="justify-content-md-center" id="onama-padding">
+                        <h2>O NAMA</h2>
+                        <p>
+                            Mi smo mala obiteljska firma s rudarskim i tekstilno-tehnološkim zvanjem i petogodišnjim
+                            njemačkim iskustvom. Firmu Sv Barbara osnovali smo vlastitim znanjem i uz partnerstvo 6
+                            najboljih njemačkih firmi u svojim domenama. Kao ovlašteni distributer i vanjski suradnik,
+                            želimo na hrvatske kamenolome dovesti najmoderniju njemačku tehnologiju. Vlastitim terenskim
+                            angažmanom preko ovog inženjerskog ureda imate direktan kontakt sa suvremenim i brzim
+                            rješenjima tehničke problematike kamenoloma i reciklaže. Petogodišnje iskustvo na više
+                            eksploatacijskih polja pri intenzivnoj produkciji kamenih frakcija naučilo nas je koje firme
+                            i cijene odabrati prilikom remonta postrojenja, poboljšanja kvalitete produkta, miniranja i
+                            ostalih inženjerskih zahvata na kamenolomima. Našom podrškom i komunikacijom imate direktan
+                            pristup iskusnim njemačkim inženjerima u domenama klasiranja, transporta, usitnjavanja,
+                            otprašivanja, pogonske tehnike i drugih segmenata rada jednog kamenoloma ili reciklaže. U
+                            bilo koje vrijeme Vam stojimo na raspolaganju brzim ponudama s više alternativnih tehničkih
+                            i cjenovnih rješenja. Vaša pomoć nam znači mnogo, testirajte firmu Sv Barbara svojim upitom,
+                            a mi ćemo se uz Vašu kritiku maksimalno prilagoditi najboljoj cijeni i vremenu isporuke.
+
+                        </p>
+                    </div>
+
+                    <div class="justify-content-md-center" id="onama-padding">
+                        <h2>MISIJA I VIZIJA</h2>
+                        <p>
+                            Kamenolom je jedna specifična i zanimljiva tvornica koju, kao i sve ostale čine mnoge
+                            tehničke i pravne karike koje moraju biti pravovaljano povezane da bi proizvodnja bila
+                            kontinuirana. Proizvodnja kamenih frakcija je grub proces kojeg prate česti kvarovi i
+                            trošenja materijala. Osim tonama proizvedenog kamenog agregata, efikasnost jednog kamenoloma
+                            se mjeri i brzinom otklanjanja i pravilnom procjenom tehničkih poteškoća. Iz iskustva znamo
+                            da je jedan kamenolom zdraviji i vitalniji ukoliko ima na raspolaganju više različitih
+                            dobavljača koji se nadmeću znanjem, brzinom i cijenom. Mi smo odlučili pokrenuti ovaj posao
+                            upravo iz razloga da postanemo jedna od najvećih baza podataka proizvodne tehnike hrvatskih
+                            kamenoloma, i da uz pomoć odabranih njemačkih partnera učinimo Vaš kamenolom efikasnijim.
+                            Za razliku od drugih grana industrije, proizvodnju kamenih agregata čine mnogi, naizgled
+                            nepovezani elementi. Počevši od raznovrsnih pravnih zahtvjeva jednog eksploatacijskog polja,
+                            zatim samog miniranja koje zahtjeva ispravno bušenje, korištenje i skladištenje eksploziva,
+                            pazeći pri tom na zaštitu na radu. K tomu još i neprecizan proces lomljenja i drobljenja, pa
+                            težak tračni transport do glomaznih sustava sita, da bi na samom kraju, krajni produkt morao
+                            zadovoljiti stroge kriterije kupaca. Ta duga lista proizvodnih zahtjeva nam daje nepresušan
+                            izvor informacija i mjesta za napredak. Vizija nam je od Vas učiti i donijeti Vam
+                            najmoderniju tehniku sa zapada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL KONTAKT FORMA -->
+    <div class="modal-window modal-kontakt hidden">
+        <button class="close-modal close-kontakt">&times;</button>
+        <div class="container contact-form">
+
+            <form method="post">
+                <h3>Pišite nam, uvijek smo Vam na usluzi</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Vaše Ime *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Vaš Email *"
+                                value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Vaš Telefon *"
+                                value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Pošalji" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Vaša poruka *"
+                                style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!--  MODAL USITNJAVANJE -->
     <div class="modal-window modal-usitnjavanje hidden">
@@ -197,7 +287,8 @@
 
                 <div class="col-md-8">
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptates aut accusantium dolor,
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptates aut accusantium
+                        dolor,
                         accusamus provident laboriosam eos nulla pariatur! Unde minus itaque corrupti dicta, ea
                         veritatis tenetur mollitia. Earum,
                     </p>
@@ -209,7 +300,8 @@
 
                 <div class="col-md-8">
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptates aut accusantium dolor,
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptates aut accusantium
+                        dolor,
                         accusamus provident laboriosam eos nulla pariatur! Unde minus itaque corrupti dicta, ea
                         veritatis tenetur mollitia. Earum,
                     </p>
@@ -220,16 +312,19 @@
 
 
     <!--O nama-->
-    <div class="onama" id="onama">
+    <div class="onama">
         <div class="container">
             <div class="row">
                 <div class="justify-content-md-center" id="onama-padding">
                     <h2>O NAMA</h2>
                     <p>
                         Tehničkom podrškom i komunikacijom preko ovog inženjerskog ureda imate direktan kontakt s
-                        iskusnim njemačkim inženjerima u domenama klasiranja, transporta, usitnjavanja, otprašivanja,
-                        pogonske tehnike i drugih segmenata rada jednog kamenoloma ili reciklaže. U bilo koje vrijeme
-                        Vam stojimo na raspolaganju brzim ponudama potrošnih elemenata s više alternativnih tehničkih i
+                        iskusnim njemačkim inženjerima u domenama klasiranja, transporta, usitnjavanja,
+                        otprašivanja,
+                        pogonske tehnike i drugih segmenata rada jednog kamenoloma ili reciklaže. U bilo koje
+                        vrijeme
+                        Vam stojimo na raspolaganju brzim ponudama potrošnih elemenata s više alternativnih
+                        tehničkih i
                         cjenovnih rješenja.
                     </p>
                 </div>
